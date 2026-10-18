@@ -1,5 +1,10 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>九子奪嫡 · 宦海浮沉</title><link rel="stylesheet" href="css/style.css"><script defer src="js/data.js"></script><script defer src="js/expansion.js"></script><script defer src="js/chronicle.js"></script><script defer src="js/app.js"></script></head>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>九子奪嫡 · 宦海浮沉</title><style>
+:root{color-scheme:dark;--bg:#101211;--panel:#191c19;--line:#34372e;--gold:#bca373;--text:#d9d6cc;--muted:#91958a;--red:#a34b3f}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.8 system-ui,-apple-system,sans-serif}button,select{font:inherit}button{cursor:pointer;color:var(--text);background:transparent;border:1px solid var(--line);padding:10px 16px;border-radius:3px}button:hover{border-color:var(--gold);background:#bca3730d}button:disabled{opacity:.4;cursor:not-allowed}button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}header{height:80px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%;color:var(--muted)}.brand{color:var(--text);text-decoration:none;font-family:serif;font-size:21px;display:flex;align-items:center;gap:12px}.brand small{font:10px system-ui;letter-spacing:2px}.seal{display:inline-grid;place-items:center;width:36px;height:40px;border:1px solid #a55546;color:#c36c5a;font:25px serif;transform:rotate(-3deg)}main{max-width:1480px;margin:auto;padding:38px 5% 20px}.masthead{padding:0 0 32px}.eyebrow{color:var(--gold);font-size:10px;letter-spacing:2px}.masthead h1{font:44px/1.4 'Songti TC',serif;letter-spacing:8px;margin:10px 0}.masthead h1 span{font-size:15px;letter-spacing:3px;margin-left:25px;color:var(--gold)}.masthead>p:last-child{color:var(--muted)}.layout{display:grid;grid-template-columns:240px minmax(360px,1fr) 260px;gap:22px;align-items:start}.panel{border:1px solid var(--line);background:var(--panel);border-radius:4px;overflow:hidden}.panelhead{padding:15px 19px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:1px}.panelhead small{font-size:8px;color:var(--muted);letter-spacing:1px}.profile{padding:24px 20px;display:flex;gap:15px;align-items:center}h2{font-family:'Songti TC',serif;font-weight:500}.profile h2{font-size:20px;margin:0;letter-spacing:3px}.profile p{font-size:11px;margin:2px 0;color:var(--muted)}#stats{padding:0 20px}.stat{margin:0 0 20px}.statrow{display:flex;justify-content:space-between;font-size:12px}.statrow small{color:var(--muted);font-size:10px;margin-left:6px}.statrow b{font-weight:400;color:var(--gold)}.track{height:3px;background:#30342d;margin-top:8px}.track span{display:block;height:100%;background:var(--gold);transition:width .3s}.affiliation{margin:25px 20px 0;padding-top:17px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}.affiliation strong{display:block;font-weight:400;color:var(--gold)}.note{padding:5px 20px 20px;color:var(--muted);font-size:11px}.storybody{padding:28px 32px}.storybody h2{font-size:32px;letter-spacing:5px;margin:12px 0 25px}#story,#after{font-family:'Songti TC',serif;font-size:16px;line-height:2.2;white-space:pre-line}blockquote{margin:24px 0;padding:17px 20px;border-left:2px solid var(--red);background:#a34b3f0b;color:#cb8776;font-family:serif;white-space:pre-line}#feedback{color:var(--gold);white-space:pre-line;font-size:13px}.choice-label{margin:32px 0 12px;font-size:11px;color:var(--muted);display:flex;justify-content:space-between}.choice-label span{font-size:8px;letter-spacing:1px}#choices{display:grid;gap:10px}#choices button{text-align:left;padding:13px 17px;display:flex;justify-content:space-between;gap:12px}#choices small{color:var(--muted);font-size:10px}#choices button::after{content:'↗';color:var(--gold)}.storyfoot{padding:12px 20px;border-top:1px solid var(--line);font-size:10px;color:var(--muted);display:flex;justify-content:space-between}.right{display:grid;gap:20px}.memorial{text-align:center;padding:22px;background:radial-gradient(ellipse at top,#49402b33,transparent 70%),var(--panel)}.memorial .seal{margin:15px}.memorial h2{letter-spacing:4px;font-size:24px;margin:0}.memorial p:not(.eyebrow){font-size:12px;color:var(--muted)}.primary{border-color:#8b7954;background:#bca373;color:#181b17}.primary:hover{background:#d0b984;color:#111}.memorial button{width:100%;margin:12px 0}.memorial small{font-size:10px;color:var(--muted)}.journal ol{max-height:280px;overflow:auto;list-style:none;padding:0 18px;margin:0}.journal li{border-bottom:1px solid var(--line);padding:15px 0;color:var(--muted);font-size:11px;white-space:pre-line}.journal li:first-child{color:var(--gold)}.testing{padding:12px 17px;font-size:11px;color:var(--muted)}.testing summary{cursor:pointer}.testing button{display:block;font-size:11px;margin:8px 0;width:100%}.bottom{display:flex;justify-content:space-between;color:#71776a;font-size:10px;margin-top:22px;letter-spacing:1px}dialog{max-width:560px;width:calc(100% - 32px);background:#1b1e1a;color:var(--text);border:1px solid #6d6248;border-radius:5px;padding:30px}dialog::backdrop{background:#000b;backdrop-filter:blur(4px)}dialog h2{font-size:28px;letter-spacing:4px}dialog>p{color:var(--muted);font-size:13px}.close{float:right;border:0;font-size:22px;padding:0 8px}select{width:100%;padding:10px;background:#111510;border:1px solid var(--line);color:var(--text);margin:8px 0 15px}#channels label{display:block;padding:12px;border:1px solid var(--line);margin-bottom:8px;font-size:13px}#channels small{display:block;color:var(--muted);font-size:11px;margin-left:24px}#reply{white-space:pre-line;color:#cf9b82;margin:18px 0}#send{width:100%}@media(min-width:1500px){main{padding-top:55px}}@media(max-width:1100px){.layout{grid-template-columns:210px minmax(300px,1fr)}.right{grid-column:1/-1;grid-template-columns:1fr 1fr}.testing{grid-column:1/-1}}@media(max-width:700px){header{padding:0 20px;height:65px}header>span,.brand small{display:none}main{padding:25px 16px}.masthead h1{font-size:34px}.masthead h1 span{display:block;margin:12px 0 0;font-size:13px}.layout{display:flex;flex-direction:column}.layout>aside,.narrative,.right{width:100%}#stats{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.profile{padding:16px 20px}.affiliation{margin-top:0}.note{margin-bottom:0}.storybody{padding:23px}.right{display:grid;grid-template-columns:1fr}.testing{grid-column:auto}.bottom span{max-width:45%}}
+.relations{border-top:1px solid var(--line);margin:0 20px;padding:12px 0}.relations h3{font:14px 'Songti TC',serif;color:var(--gold);margin:16px 0}.relations h3 small{display:block;color:var(--muted);font:10px system-ui;margin-top:7px}.relation{display:grid;grid-template-columns:1fr auto;gap:4px 8px;margin:12px 0}.relation>span{font-size:11px;display:flex;justify-content:space-between;gap:5px}.relation strong{color:var(--gold);font-weight:400}.relation meter{width:100%;height:6px;grid-column:1}.relation button{grid-column:2;grid-row:1/3;padding:3px 8px;font-size:10px}.relation>small{font-size:9px;color:var(--muted);grid-column:1/-1}.relations .note{padding:0;font-size:10px}#social-reply{font-size:11px;color:var(--gold);white-space:pre-line}
+.chronicle{margin:30px 0 10px;padding:24px;border:1px solid #796746;background:linear-gradient(135deg,#bca3730d,transparent);position:relative}.chronicle h3{font:24px 'Songti TC',serif;letter-spacing:5px;color:var(--gold);margin:10px 0 22px}#chronicle-text{font:16px/2.2 'Songti TC',serif;white-space:pre-line;text-align:justify}#chronicle-evidence{border-top:1px solid var(--line);padding-top:16px;margin-top:22px;color:var(--muted);font-size:11px;line-height:1.9}.chronicle>small{display:block;color:var(--muted);font-size:10px;margin-top:15px}.chronicle[hidden]{display:none}@media(max-width:700px){.chronicle{padding:18px}}
+
+</style></head>
 <body><header><a class="brand" href="./index.html"><span class="seal">九</span> 權力遊戲 <small>JIULONG DUODI</small></a><span>康熙朝 · 官場生存錄</span><button id="restart">重新入仕 ↻</button></header>
 <main><section class="masthead"><p class="eyebrow">THE NINE PRINCES · 一場沒有贏家的儲位之爭</p><h1>九子奪嫡<span>宦海浮沉，唯求善終。</span></h1><p>天心難測，聖恩如刃。在皇權與朋黨之間，為自己留一條歸途。</p></section>
 <div class="layout"><aside class="panel"><div class="panelhead">官員案牘 <small>PERSONNEL RECORD</small></div><div class="profile"><span class="seal">臣</span><div><h2>沈慎言</h2><p>戶部郎中 · 正五品</p></div></div><div id="stats"></div><section class="relations"><h3>皇子往來 <small>親疏 −100 ～ +100</small></h3><div id="prince-relations"></div><h3>朝臣交遊</h3><div id="minister-relations"></div><p class="note">每案可交遊一次；親疏不等於繼位機率。佟國維線為架空延伸。</p><div id="social-reply" role="status"></div></section><div class="affiliation">門庭歸屬 <strong id="alignment">未附任何皇子</strong></div><p class="note">水滿則溢，月盈則虧。聖眷過盛，未必是福。</p></aside>
@@ -7,4 +12,1012 @@
 <aside class="right"><section class="panel memorial"><p class="eyebrow">PRIVATE MEMORIAL</p><span class="seal">密</span><h2>密摺試探</h2><p>一紙奏摺，探天心深淺。<br>朱批之間，藏著誰的前程？</p><button class="primary" id="probe">啟封密摺匣 ↗</button><small>耗費家財 · 情報未必可信</small></section><section class="panel journal"><div class="panelhead">邸報摘錄 <small>ARCHIVE</small></div><ol id="log" aria-live="polite"></ol></section><details class="panel testing"><summary>原型測試台</summary><p>載入獨立終章情境，覆蓋本局進度。</p><button data-scenario="safe">中庸 · 致仕情境</button><button data-scenario="trap">寵極 · 慰留情境</button><button data-scenario="poor">清貧 · 追賠情境</button></details></aside></div>
 <p class="bottom">九子奪嫡 / 互動原型 <span>含架空繼位路線；非史實重演。</span></p></main>
 <dialog id="modal"><form method="dialog"><button class="close" aria-label="關閉密摺">×</button></form><p class="eyebrow">御前密奏 · 閒人勿近</p><h2>密摺試探</h2><p>選一位皇子，再擇呈遞途徑。消息有真假，聖意無定數。</p><label for="target">試探對象</label><select id="target"></select><div id="channels"></div><div id="reply" role="status" aria-live="polite"></div><button id="send" class="primary">封緘呈遞</button></dialog>
+
+<script>
+/* =====================================================================
+ * 權力遊戲・九子奪嫡 — 靜態資料層
+ * 人物、數值、事件、密摺線索、終局判定、結局文本
+ * 所有事件文本皆可為 (state) => string 之函式，以支援隨機儲君。
+ * ===================================================================== */
+'use strict';
+
+const GameData = (() => {
+
+  /* ---------------------------------------------------------------
+   * 一、核心參數（調整平衡請改此處）
+   * --------------------------------------------------------------- */
+  const CONFIG = {
+    START: { shengJuan: 45, dangYuan: 30, qingWang: 45, shiWu: 40, jiaCai: 40, shouYuan: 72 },
+    UPKEEP: { jiaCai: 2, shouYuan: -2 },      // 每回合：俸祿節敬、歲月流逝
+    TRAP_SHENGJUAN: 80,                         // 聖眷 ≥ 此值 → 年羹堯陷阱
+    TRAP_COMBO: { shengJuan: 70, dangYuan: 80 },// 聖眷、黨援俱盛 → 功高震主，亦入陷阱
+    SAFE_SHENGJUAN_MIN: 35,                     // 聖眷低於此 → 罷黜
+    SAFE_JIACAI: [25, 70],                      // 家財中庸區間；過高抄家、過低追賠
+    PURGE_ALIGN_FAVOR: 25,                      // 深附敗方皇子之門檻
+    PURGE_SUCC_FAVOR: 15,                       // 與新君親疏不足此數則難逃黨禍
+    ACCESSION_RATE: 0.4,                        // 潛邸舊人：登極時 聖眷 += 親疏 × 此率
+    MEMORIAL_LAST_CHAPTER: 5,                   // 終章之後密摺匣封存
+  };
+
+  /* ---------------------------------------------------------------
+   * 二、官員數值
+   * --------------------------------------------------------------- */
+  const STATS = [
+    { key: 'shengJuan', name: '聖眷', sub: '皇帝信任', seal: '聖',
+      tiers: [[15, '厭棄'], [35, '冷淡'], [55, '平常'], [70, '器重'], [79, '倚重'], [100, '寵極']] },
+    { key: 'dangYuan', name: '黨援', sub: '派系勢力', seal: '黨',
+      tiers: [[15, '孤臣'], [35, '寡援'], [55, '有援'], [75, '門生故吏'], [100, '黨羽遍朝']] },
+    { key: 'qingWang', name: '清望', sub: '士林名聲', seal: '清',
+      tiers: [[15, '聲名狼藉'], [35, '物議'], [55, '尋常'], [75, '清譽'], [100, '士林領袖']] },
+    { key: 'shiWu', name: '實務', sub: '辦差能力', seal: '務',
+      tiers: [[15, '庸碌'], [35, '生疏'], [55, '幹練'], [75, '能臣'], [100, '經濟大才']] },
+    { key: 'jiaCai', name: '家財', sub: '宦囊積蓄', seal: '財',
+      tiers: [[15, '家徒四壁'], [30, '清寒'], [55, '小康'], [70, '殷實'], [85, '豪富'], [100, '富可敵國']] },
+    { key: 'shouYuan', name: '壽元', sub: '身體康健', seal: '壽',
+      tiers: [[15, '風燭殘年'], [35, '多病'], [55, '尚健'], [75, '康健'], [100, '精神矍鑠']] },
+  ];
+
+  /* ---------------------------------------------------------------
+   * 三、諸皇子（儲君候選）
+   * reign：若其登極之年號（雍正以外為架空）
+   * --------------------------------------------------------------- */
+  const PRINCES = {
+    yinreng: { id: 'yinreng', name: '胤礽', order: '皇二子', short: '二阿哥', title: '皇太子', reign: '延祚',
+      desc: '元后嫡出，兩立兩廢，東宮舊人遍布朝野。' },
+    yinzhi: { id: 'yinzhi', name: '胤祉', order: '皇三子', short: '三阿哥', title: '誠親王', reign: '崇文',
+      desc: '博學能文，主持蒙養齋修書，常伴聖駕。' },
+    yinzhen: { id: 'yinzhen', name: '胤禛', order: '皇四子', short: '四阿哥', title: '雍親王', reign: '雍正',
+      desc: '冷面誠僧，辦差刻核，自號「天下第一閒人」。' },
+    yinsi: { id: 'yinsi', name: '胤禩', order: '皇八子', short: '八阿哥', title: '八貝勒', reign: '仁和',
+      desc: '溫文賢達，百官歸心，人稱「八賢王」。' },
+    yinti: { id: 'yinti', name: '胤禵', order: '皇十四子', short: '十四阿哥', title: '大將軍王', reign: '定武',
+      desc: '英武果決，西征統帥，與八阿哥交厚。' },
+  };
+  const PRINCE_ORDER = ['yinreng', 'yinzhi', 'yinzhen', 'yinsi', 'yinti'];
+
+  const P = id => PRINCES[id];
+  const heir = st => PRINCES[st.trueSuccessor];
+  const reign = st => heir(st).reign;
+
+  /* ---------------------------------------------------------------
+   * 四、章節
+   * --------------------------------------------------------------- */
+  const CHAPTERS = [
+    { num: '壹', name: '一廢太子' },
+    { num: '貳', name: '清查虧空' },
+    { num: '叁', name: '二廢太子' },
+    { num: '肆', name: '斃鷹之變' },
+    { num: '伍', name: '大將軍王' },
+    { num: '陸', name: '萬壽暮景' },
+    { num: '終', name: '龍馭上賓', final: true },
+    { num: '餘', name: '鳥盡弓藏', final: true, trap: true },
+  ];
+
+  /* ---------------------------------------------------------------
+   * 五、密摺試探：呈遞途徑
+   * clarity  ：得到明確（非模稜）回覆之機率
+   * accuracy ：明確回覆為「真」之機率（隨章節微升）
+   * risk     ：事洩機率（聖眷越高越低）
+   * --------------------------------------------------------------- */
+  const CHANNELS = [
+    {
+      id: 'qingan', name: '請安摺', mode: 'rescript', head: '奏為恭請聖安事',
+      desc: '例行問安，摺尾夾帶一二語試探。萬歲爺多只批「朕安」，語焉不詳。',
+      cost: { jiaCai: 3 }, clarity: 0.55, accuracy: 0.62, risk: 0.05, rel: '低', riskLabel: '低',
+      penalty: { shengJuan: -3 },
+      exposeText: '硃批另附一行：「請安便請安，何必多言？」你的試探之意，萬歲爺一眼看穿。',
+    },
+    {
+      id: 'mizou', name: '密陳時政', mode: 'rescript', head: '奏為密陳錢糧事',
+      desc: '借奏錢糧刑名之事，旁敲側擊諸皇子辦差優劣，觀硃批語氣。',
+      cost: { jiaCai: 6, dangYuan: 4 }, clarity: 0.85, accuracy: 0.74, risk: 0.15, rel: '中', riskLabel: '中',
+      penalty: { shengJuan: -8 },
+      exposeText: '硃批另附一行：「爾為外臣，窺伺儲位，是何居心？著明白回奏！」墨跡淋漓，力透紙背。',
+    },
+    {
+      id: 'neishi', name: '結交內侍', mode: 'whisper', head: '密箋',
+      desc: '以重金買通御前太監，探聽萬歲爺私下言行。消息最真，一旦事洩，禍不旋踵。',
+      cost: { jiaCai: 16, qingWang: 5 }, clarity: 1, accuracy: 0.86, risk: 0.22, rel: '高', riskLabel: '高',
+      penalty: { shengJuan: -12, qingWang: -6 },
+      exposeText: '你與內侍私相往來之事為敬事房察覺。那名太監被杖斃於慎刑司，萬歲爺雖未明言，卻已半月不曾召見你。',
+    },
+  ];
+
+  /* ---------------------------------------------------------------
+   * 六、密摺線索池
+   * pos：暗示此子得聖心；neg：暗示此子失聖心
+   * rescript：硃批語；whisper：內侍密語
+   * 真儲君 + 真話 → pos；真儲君 + 假話 → neg；他人反之。
+   * --------------------------------------------------------------- */
+  const CLUES = {
+    yinreng: {
+      pos: {
+        rescript: ['二阿哥自幼朕親教之，父子之情，豈能盡絕？', '朕近日夜夢孝誠皇后，心甚惻然。卿勿復言。', '廢立之事，朕自有權衡。然骨肉終是骨肉。'],
+        whisper: ['萬歲爺前兒命人往咸安宮送了貂裘，還問了句「他冷不冷」。', '御前的人瞧見，萬歲爺把二阿哥幼時描紅的字帖翻出來，看了半宿。'],
+      },
+      neg: {
+        rescript: ['狂疾未除，斷不可再。此事毋庸再議。', '朕為此子，數十年心力交瘁。卿當知朕意。'],
+        whisper: ['萬歲爺聽人提起咸安宮，臉色就沉下來，摔了一隻茶盞。', '聽說萬歲爺吩咐，咸安宮的用度減了三成。'],
+      },
+    },
+    yinzhi: {
+      pos: {
+        rescript: ['三阿哥編纂《律曆淵源》，學問淹通，朕甚倚之。', '誠親王侍朕最勤，蒙養齋諸事，非彼不可。'],
+        whisper: ['萬歲爺這月去了三趟誠親王府園子，連晚膳都在那兒用的。', '蒙養齋的燈火徹夜不熄，萬歲爺常親臨，和三爺論算學到三更。'],
+      },
+      neg: {
+        rescript: ['三阿哥只合讀書，餘事非其所長。', '誠親王文弱，不堪煩劇。'],
+        whisper: ['萬歲爺嫌三爺門下那幫文人聒噪，前日斥退了兩個。', '三爺請的差事，萬歲爺只批了「不必」二字。'],
+      },
+    },
+    yinzhen: {
+      pos: {
+        rescript: ['四阿哥辦差甚實，不避嫌怨，朕心甚慰。', '「戒急用忍」，朕昔年所賜四字，彼能體之，可嘉。', '雍親王誠孝，朕近日體中不豫，彼侍奉最謹。'],
+        whisper: ['萬歲爺去了圓明園，見了四爺家的弘曆小阿哥，喜歡得了不得，要接進宮裡親自教養。', '四爺遞的摺子，萬歲爺看得最久，硃批也最長。'],
+      },
+      neg: {
+        rescript: ['四阿哥喜怒不定，朕曾屢訓之。', '雍親王只知刻核，失之寬仁，非人君之度。'],
+        whisper: ['萬歲爺說四爺「冷面」，戶部的差事得罪的人太多，怨聲都到了御前。', '四爺近來閉門唸佛，萬歲爺連一句也沒過問。'],
+      },
+    },
+    yinsi: {
+      pos: {
+        rescript: ['八阿哥素有賢名，朕豈不知？前事已往，不必再提。', '胤禩辦理內務府諸事，頗為妥當。'],
+        whisper: ['萬歲爺夜裡翻看八爺當年的手書，嘆了聲「可惜」，又命人好生收著。', '八爺上回請安，萬歲爺留了飯，還賞了一盤御膳房的點心。'],
+      },
+      neg: {
+        rescript: ['辛者庫賤婦所出，自幼心高陰險，朕與彼父子之恩絕矣。', '八阿哥柔奸成性，妄蓄大志，黨羽相結，朕深悉之。'],
+        whisper: ['萬歲爺一聽八爺門下又有人上摺子保舉，氣得連晚膳都沒用。', '聽說萬歲爺停了八爺的俸銀，連帶府裡屬官也一併革了。'],
+      },
+    },
+    yinti: {
+      pos: {
+        rescript: ['十四阿哥帶兵有方，西陲之事，非彼不能辦。', '大將軍王所奏甚合朕意，著照所請。'],
+        whisper: ['萬歲爺命以正黃旗纛授大將軍王，儀同天子親征，滿朝都瞧見了。', '十四爺從西寧遞來的摺子，萬歲爺天天要翻，還說「此子類朕」。'],
+      },
+      neg: {
+        rescript: ['十四阿哥年少氣盛，邊事未必可恃。', '胤禵性躁，屢為八阿哥張目，朕深以為憂。'],
+        whisper: ['萬歲爺嫌十四爺在西寧花銀子如流水，戶部那邊已經叫苦了。', '聽說萬歲爺私下說，十四爺「只是將才」。'],
+      },
+    },
+    ambiguous: {
+      rescript: ['知道了。', '覽。', '爾好好辦事。', '此事朕自有主張。', '是。'],
+      whisper: ['內侍支吾半晌，只說萬歲爺近來「心思深，誰也猜不透」。', '內侍收了銀子，卻只道「天心難測，大人自求多福」。'],
+    },
+  };
+
+  /* ---------------------------------------------------------------
+   * 七、主線時間軸（filler 由隨機事件填充）
+   * --------------------------------------------------------------- */
+  const TIMELINE = [
+    { id: 'c1_tent' },
+    { filler: true, chapter: 0, date: '康熙四十七年 秋' },
+    { id: 'c1_recommend' },
+    { id: 'c2_debt' },
+    { filler: true, chapter: 1, date: '康熙五十年 春' },
+    { id: 'c3_feast' },
+    { id: 'c3_deposed' },
+    { id: 'c4_falcon' },
+    { filler: true, chapter: 3, date: '康熙五十五年 夏' },
+    { id: 'c5_general' },
+    { filler: true, chapter: 4, date: '康熙五十九年 冬' },
+    { id: 'c6_wangshan' },
+    { id: 'c6_sacrifice' },
+    { id: 'fin_night' },
+    { id: 'fin_choice' },
+  ];
+
+  /* ---------------------------------------------------------------
+   * 八、終局判定（可供測試台預覽）
+   * --------------------------------------------------------------- */
+  function accessionEffects(st) {
+    const succ = st.trueSuccessor;
+    const fav = st.favor[succ];
+    const s = {};
+    if (fav > 0) {
+      s.shengJuan = Math.round(fav * CONFIG.ACCESSION_RATE);
+      s.dangYuan = Math.round(fav * 0.2);
+    } else if (fav < 0) {
+      s.shengJuan = Math.round(fav * 0.3);
+    }
+    if (st.align && st.align !== succ) {
+      s.dangYuan = (s.dangYuan || 0) - 15;
+      s.shengJuan = (s.shengJuan || 0) - 5;
+    }
+    return s;
+  }
+
+  const VERDICT_LABEL = {
+    purge: '黨禍株連', trap: '年羹堯陷阱', confiscate: '抄家籍沒',
+    dismissed: '罷黜歸田', stay: '宦海未已', deficit: '追賠虧空', safe: '告病善終',
+  };
+
+  /** intent: 'retire' | 'stay' */
+  function judgeFinale(st, intent) {
+    const s = st.stats, C = CONFIG, succ = st.trueSuccessor;
+    if (st.align && st.align !== succ &&
+        st.favor[st.align] >= C.PURGE_ALIGN_FAVOR && st.favor[succ] < C.PURGE_SUCC_FAVOR) {
+      return { verdict: 'purge', reason: `深附${P(st.align).short}（親疏 ${st.favor[st.align]}），與新君無舊` };
+    }
+    if (s.shengJuan >= C.TRAP_SHENGJUAN) {
+      return { verdict: 'trap', reason: `聖眷 ${s.shengJuan} ≥ ${C.TRAP_SHENGJUAN}：寵極招忌` };
+    }
+    if (s.shengJuan >= C.TRAP_COMBO.shengJuan && s.dangYuan >= C.TRAP_COMBO.dangYuan) {
+      return { verdict: 'trap', reason: `聖眷 ${s.shengJuan}、黨援 ${s.dangYuan}：功高震主` };
+    }
+    if (s.jiaCai > C.SAFE_JIACAI[1]) return { verdict: 'confiscate', reason: `家財 ${s.jiaCai} > ${C.SAFE_JIACAI[1]}：富而招忌` };
+    if (s.shengJuan < C.SAFE_SHENGJUAN_MIN) return { verdict: 'dismissed', reason: `聖眷 ${s.shengJuan} < ${C.SAFE_SHENGJUAN_MIN}：新朝不錄` };
+    if (intent === 'stay') return { verdict: 'stay', reason: '聖眷適中，留任新朝' };
+    if (s.jiaCai < C.SAFE_JIACAI[0]) return { verdict: 'deficit', reason: `家財 ${s.jiaCai} < ${C.SAFE_JIACAI[0]}：無力賠補` };
+    return { verdict: 'safe', reason: '聖眷、家財俱在中庸之數' };
+  }
+
+  /** 將判定轉為事件結果（供 fin_choice 使用） */
+  function finaleOutcome(st, intent) {
+    const { verdict } = judgeFinale(st, intent);
+    const retire = intent === 'retire';
+    const flags = { finaleIntent: intent, verdict };
+    switch (verdict) {
+      case 'purge':
+        return { flags, ending: 'purge',
+          result: '你的摺子尚未遞出，粘杆處的番役已圍住了府門。為首一人亮出腰牌，冷冷道：「大人，請吧。」' };
+      case 'trap':
+        return { flags, next: 'trap_rescript',
+          result: retire
+            ? '你的《乞骸骨疏》遞上不過三日，便原封發回。\n\n摺尾密密麻麻，盡是新君的親筆硃批，字字滾燙……'
+            : '賀表遞上當日，新君便召你養心殿獨對，賜坐、賜茶，長談至夜半。\n\n次日，硃批發下，字字滾燙……' };
+      case 'confiscate':
+        return { flags, ending: 'confiscate',
+          result: '摺子遞上，迎來的卻是都察院的一道參本：「家資巨萬，來歷不明。」' };
+      case 'dismissed':
+        return { flags, ending: 'dismissed',
+          result: retire ? '硃批只有一行：「爾既有病，即回籍去。」一字未及舊勞。' : '硃批：「此等庸碌之員，留之何益？著即休致。」' };
+      case 'stay':
+        return { flags, ending: 'stay', result: '硃批五個字：「知道了。好生辦事。」不冷，也不熱。' };
+      case 'deficit':
+        return { flags, ending: 'deficit', result: '新君准你致仕。但戶部清查舊帳的文書，也同日送到了你府上。' };
+      default:
+        return { flags, ending: 'safe',
+          result: '三日後，摺子發回。硃批墨色溫潤：「准以原官致仕。卿多年勤慎，朕所深知。回籍好生調養。」\n\n你捧著摺子，在書房裡坐了很久。' };
+    }
+  }
+
+  /* ---------------------------------------------------------------
+   * 九、主線事件
+   * choice 欄位：text, hint, s(數值), f(皇子親疏), align, result, resolve(st), cond(st), need(st)
+   * --------------------------------------------------------------- */
+  const EVENTS = {
+    /* ----- 第壹章 一廢太子 ----- */
+    c1_tent: {
+      chapter: 0, date: '康熙四十七年 八月', place: '塞外・布爾哈蘇台行營', title: '帳殿夜警',
+      text: '秋獮途中，十八阿哥病歿，萬歲爺悲慟不已。\n\n是夜你輪值行營。三更時分，忽見一道人影在御帳外徘徊——借著篝火看清，竟是皇太子胤礽，正以小刀劃破帳幕，向內窺視。\n\n太子察覺有人，回頭與你四目相對。良久，他一言不發，退入夜色。',
+      choices: [
+        { text: '據實密奏萬歲', hint: '忠於君父，但從此與東宮結怨',
+          s: { shengJuan: 8, qingWang: 2 }, f: { yinreng: -15 },
+          result: '萬歲爺聽罷，手中念珠斷落一地。數日後，於行營召集諸王大臣，涕泣宣布廢黜皇太子。\n\n你的名字，被記在了御前。' },
+        { text: '佯作未見，緘口不言', hint: '明哲保身',
+          s: { shengJuan: -3 }, f: { yinreng: 5 },
+          result: '此事終究由他人奏聞。萬歲爺查問當夜值守，目光在你身上停了片刻，未發一言。' },
+        { text: '暗中通報東宮，勸太子收斂', hint: '押注太子，風險極高',
+          resolve: () => {
+            const caught = Math.random() < 0.35;
+            return {
+              s: { dangYuan: 8, shengJuan: caught ? -16 : -4 }, f: { yinreng: 15 }, align: 'yinreng',
+              result: caught
+                ? '你的密信被大阿哥胤禔的人截獲，呈至御前。萬歲爺雖未深究，卻已將你視作東宮私人。'
+                : '太子遣心腹回話：「此情不忘。」數日後太子仍遭廢黜，但東宮舊人從此視你為自己人。',
+            };
+          } },
+      ],
+    },
+
+    c1_recommend: {
+      chapter: 0, date: '康熙四十七年 十一月', place: '暢春園・澹寧居', title: '廷議舉儲',
+      text: '太子既廢，大阿哥胤禔又因魘鎮事敗被圈禁。萬歲爺忽命滿漢大臣於諸皇子中「公舉」可為太子者，並言「眾議誰屬，朕即從之」。\n\n佟國維、馬齊、阿靈阿、鄂倫岱等暗中串聯。朝房內傳遞著一份名單，上頭密密麻麻寫的，都是同一個名字——「八阿哥」。',
+      choices: [
+        { text: '隨眾署名，保舉八阿哥', hint: '順應眾議，結交八爺黨',
+          s: { dangYuan: 12, qingWang: 4, shengJuan: -10 }, f: { yinsi: 20 }, align: 'yinsi',
+          result: '次日萬歲爺震怒：「八阿哥未曾更事，近又罹罪，且其母家亦甚微賤！」馬齊被當場拿問。\n\n你雖未受懲，卻已被記為八爺一黨。' },
+        { text: '奏稱「立儲大事，惟聖心獨斷」', hint: '不站隊，但同僚視你為異類',
+          s: { shengJuan: 6, dangYuan: -5 },
+          result: '萬歲爺閱後頷首：「此語近理。」朝房中的同僚，卻從此對你冷淡了幾分。' },
+        { text: '密奏請復立廢太子', hint: '揣摩上意？',
+          s: { shengJuan: 5, qingWang: -5, dangYuan: -3 }, f: { yinreng: 15 },
+          result: '萬歲爺留中不發。次年三月，胤礽竟復立為太子。\n\n有人說你善揣上意，也有人說你是投機之徒。' },
+      ],
+    },
+
+    /* ----- 第貳章 清查虧空 ----- */
+    c2_debt: {
+      chapter: 1, date: '康熙四十九年 五月', place: '戶部衙門', title: '清查虧空',
+      text: '國庫存銀僅剩八百萬兩，戶部歷年虧空竟逾千萬。萬歲爺命四阿哥胤禛會同十三阿哥胤祥清查追繳。\n\n四阿哥冷面無情，傳話到你案前：「戶部的帳，一筆也不許漏。」而另一頭，滿城的王公勳貴、你的老上司、昔日同年，都在等你「通融」。',
+      choices: [
+        { text: '鐵面追繳，不避親故', hint: '得罪滿朝，換四阿哥青眼',
+          s: { shiWu: 10, dangYuan: -10, shengJuan: 3 }, f: { yinzhen: 15 },
+          result: '你親自帶人上門追繳，連老座師也被逼得變賣字畫。四阿哥在差事摺上批了「可用」二字。\n\n京中卻多了一句話：「寧見閻王，莫見戶部。」' },
+        { text: '暗中替同僚周旋拖延', hint: '廣結人情',
+          s: { dangYuan: 10, jiaCai: 8, shiWu: -3 }, f: { yinzhen: -10, yinsi: 6 },
+          result: '同僚感激，年節禮單厚了許多。八爺府的人私下傳話，誇你「懂得體恤人情」。\n\n四阿哥的眼神，卻越來越冷。' },
+        { text: '先自掏腰包填平舊帳，餘事秉公', hint: '破財立身',
+          s: { jiaCai: -15, qingWang: 8, shiWu: 5 }, f: { yinzhen: 6 },
+          result: '你變賣城外一處田莊，先把自己名下的虧空填平。此舉傳開，士林讚你「清介」，連四阿哥也難得說了句「難得」。' },
+      ],
+    },
+
+    /* ----- 第叁章 二廢太子 ----- */
+    c3_feast: {
+      chapter: 2, date: '康熙五十年 十月', place: '步軍統領托合齊府', title: '會飲之邀',
+      text: '太子復立已兩年，東宮聲勢復熾。步軍統領托合齊、刑部尚書齊世武、兵部尚書耿額，以「會飲」為名，頻頻宴集。\n\n今日一張泥金請柬送到你府上。來人笑道：「我家大人說了，席間都是自己人，大人務必賞光。」',
+      choices: [
+        { text: '欣然赴宴，結交東宮', hint: '雪中送炭，還是引火燒身？',
+          s: { dangYuan: 12, shengJuan: -12 }, f: { yinreng: 12 }, align: 'yinreng',
+          result: '酒酣耳熱之際，有人低聲說起「早日登極」。半年後會飲案發，托合齊下獄瘐死。\n\n你受牽連，降二級留任。' },
+        { text: '託病婉辭', hint: '不沾是非',
+          s: { qingWang: 2, dangYuan: -2 },
+          result: '你閉門謝客。半年後會飲案發，托合齊下獄瘐死，赴宴者無一倖免。\n\n你在書房裡聽到消息，長出了一口氣。' },
+        { text: '赴宴而默記其言，密奏聖上', hint: '以告密換聖眷',
+          s: { shengJuan: 10, qingWang: -10, dangYuan: -8 }, f: { yinreng: -20 },
+          result: '你的密摺成了會飲案的關鍵證據。萬歲爺嘉你「忠悃」。\n\n但從此官場中人見你，都下意識地壓低聲音。' },
+      ],
+    },
+
+    c3_deposed: {
+      chapter: 2, date: '康熙五十一年 十月', place: '紫禁城・乾清宮', title: '二廢太子',
+      text: '萬歲爺硃筆諭示：皇太子胤礽自復立以來，狂疾未除，大失人心，斷不可再立。胤礽被圈禁咸安宮。\n\n隨即又頒嚴旨——',
+      rescriptLabel: '聖諭',
+      rescript: '後若有奏請皇太子已經改過從善、應當釋放者，朕即誅之。',
+      textAfter: '儲位虛懸，諸皇子各自蓄勢。你的下一步，將決定你站在哪一邊。',
+      choices: [
+        { text: '冒死上疏，為廢太子陳情', hint: '不忘舊主',
+          s: { qingWang: 8, shengJuan: -15 }, f: { yinreng: 20 }, align: 'yinreng',
+          result: '摺子遞上，石沉大海。三日後，你被罰俸一年。\n\n士林中，卻傳頌你「不忘舊主」。' },
+        { text: '上表頌聖，稱「聖斷英明」', hint: '隨波逐流',
+          s: { shengJuan: 5, qingWang: -4 },
+          result: '萬歲爺批了個「知道了」。你的頌表被抄入邸報，與數十份同樣的頌表並列。' },
+        { text: '轉而結交雍親王府', hint: '投四阿哥門下',
+          s: { dangYuan: 6, jiaCai: -8 }, f: { yinzhen: 14 }, align: 'yinzhen',
+          result: '雍親王府門禁森嚴，你的拜帖送了三次才得回音。王府長史戴鐸私下對你說：「主子記住你了。」' },
+        { text: '轉投八爺府', hint: '投八阿哥門下',
+          s: { dangYuan: 10, jiaCai: 4 }, f: { yinsi: 14 }, align: 'yinsi',
+          result: '八爺親自出迎，執手相談，如沐春風。當晚，九爺胤禟便遣人送來一匣東珠。' },
+        { text: '投書誠親王，共修典籍', hint: '投三阿哥門下',
+          s: { qingWang: 6, shiWu: 2 }, f: { yinzhi: 14 }, align: 'yinzhi',
+          result: '誠親王延你入蒙養齋，參修《律曆淵源》。此處遠離是非，卻離萬歲爺很近。' },
+      ],
+    },
+
+    /* ----- 第肆章 斃鷹之變 ----- */
+    c4_falcon: {
+      chapter: 3, date: '康熙五十三年 十一月', place: '熱河・行在', title: '斃鷹之變',
+      text: '萬歲爺巡幸塞外，八阿哥因生母良妃忌辰未能隨駕，遣太監進獻海東青兩架。\n\n鷹籠揭開時，兩隻海東青已奄奄一息。萬歲爺勃然大怒，當眾斥道——',
+      rescriptLabel: '聖諭',
+      rescript: '胤禩係辛者庫賤婦所生，自幼心高陰險。自此朕與胤禩，父子之恩絕矣！',
+      textAfter: '滿殿死寂。八阿哥的人，正偷眼看向你。',
+      choices: [
+        { text: '出班進言：「恐有人構陷八阿哥」', hint: '仗義執言',
+          s: { qingWang: 5, shengJuan: -9 }, f: { yinsi: 16 },
+          result: '萬歲爺冷冷看你一眼：「你倒是替他說話。」\n\n八阿哥事後托人帶話：「大恩不言謝。」' },
+        { text: '默然垂首，退班不語', hint: '沉默是金',
+          result: '你隨眾跪著，直到萬歲爺拂袖而去。後來聽說，那兩隻鷹在途中被人調了包——但誰也不敢再提。' },
+        { text: '附和聖意，痛斥八阿哥', hint: '落井下石',
+          s: { shengJuan: 6, qingWang: -5 }, f: { yinsi: -20 },
+          result: '萬歲爺點了點頭。從此八爺黨人提起你，便要啐上一口。' },
+        { text: '暗中追查鷹籠來歷', hint: '耗財冒險，或有所得',
+          need: st => st.stats.jiaCai >= 8,
+          resolve: () => {
+            const ok = Math.random() < 0.5;
+            return ok
+              ? { s: { shiWu: 6, jiaCai: -8, shengJuan: 4 },
+                  result: '你查出押送太監曾在途中與某府管事飲酒。密奏上去，萬歲爺沉吟良久，只說了句「不必再查」。\n\n但你看得出，他記住了你的細心。' }
+              : { s: { jiaCai: -8, shengJuan: -4 },
+                  result: '你的人打草驚蛇，線索盡斷。不久有人放話：「莫管閒事。」' };
+          } },
+      ],
+    },
+
+    /* ----- 第伍章 大將軍王 ----- */
+    c5_general: {
+      chapter: 4, date: '康熙五十七年 十月', place: '西寧・大將軍行轅', title: '大將軍王',
+      text: '準噶爾策妄阿拉布坦犯藏。萬歲爺命十四阿哥胤禵為撫遠大將軍，用正黃旗纛，稱「大將軍王」，統兵西征。\n\n你奉旨總理西路糧餉。協理運糧的四川總督年羹堯，是雍親王府的姻親——此人驕橫而幹練，一見面便笑道：「軍需這碗飯，吃得好，能吃一輩子。」',
+      choices: [
+        { text: '傾力籌餉，親赴西寧督運', hint: '勞形苦心',
+          s: { shiWu: 12, shengJuan: 6, shouYuan: -6 }, f: { yinti: 12 },
+          result: '你在青海高原上奔走半年，鬢角染霜。大軍糧草無缺，大將軍王在奏捷摺中特別提了你的名字。' },
+        { text: '與年羹堯聯手，借軍需中飽', hint: '富貴險中求',
+          resolve: () => {
+            const caught = Math.random() < 0.3;
+            return caught
+              ? { s: { jiaCai: 8, shengJuan: -12, qingWang: -8 }, f: { yinzhen: 4 },
+                  result: '帳目對不上，御史一本參到御前。年羹堯把罪責推得乾乾淨淨，你被罰俸三年，所得大半充公。' }
+              : { s: { jiaCai: 18, dangYuan: 6, qingWang: -8 }, f: { yinzhen: 6 },
+                  result: '年羹堯拍著你的肩膀大笑：「痛快！往後咱們就是一家人。」\n\n銀子源源不斷地流進你的私庫，雍親王府那邊，也知道了你的名字。' };
+          } },
+        { text: '上疏請節省軍費，緩進慢圖', hint: '老成謀國',
+          s: { qingWang: 6, shiWu: -4, shengJuan: -3 }, f: { yinti: -12 },
+          result: '御史們稱讚你「老成謀國」，大將軍王卻在帳中把你的奏摺撕成了兩半。' },
+      ],
+    },
+
+    /* ----- 第陸章 萬壽暮景 ----- */
+    c6_wangshan: {
+      chapter: 5, date: '康熙六十年 三月', place: '紫禁城・乾清門', title: '萬壽請儲',
+      text: '萬歲爺御極六十年，春秋六十有八。大學士王掞密疏請立太子，旋即御史陶彝等十二人聯名附議。\n\n萬歲爺震怒，斥其「欲立胤礽為太子，以為異日恩澤之地」。八十老翁王掞被罰往西陲軍前效力，由其子代往。\n\n此時，又有人將一份聯名摺遞到你面前。',
+      choices: [
+        { text: '聯名附議，請早定國本', hint: '博直聲，觸逆鱗',
+          s: { qingWang: 12, shengJuan: -15, dangYuan: 4, shouYuan: -3 },
+          result: '你的名字列在第十四。萬歲爺將你們一併發往軍前效力，數月後雖獲赦回，你在士林中的聲望卻達到了頂峰。' },
+        { text: '稱病不朝，避其鋒芒', hint: '韜光養晦',
+          s: { dangYuan: -2 },
+          result: '你稱病半月。風波過後，同僚笑你「病得真巧」。' },
+        { text: '上疏斥其「沽名邀寵」', hint: '迎合上意',
+          s: { shengJuan: 8, qingWang: -12 },
+          result: '萬歲爺硃批：「所奏甚是。」\n\n翰林院的年輕人們，卻在私下傳抄一首諷刺你的打油詩。' },
+      ],
+    },
+
+    c6_sacrifice: {
+      chapter: 5, date: '康熙六十一年 十一月', place: '暢春園', title: '冬至代祀',
+      text: st => {
+        const line = {
+          yinreng: '令人震驚的消息傳出：萬歲爺遣內侍往咸安宮，賜廢太子貂裘、御膳，並密命宗人府擬議「復封」之事。',
+          yinzhi: '萬歲爺命誠親王胤祉恭代冬至南郊大祀，並命其每日入園問安。',
+          yinzhen: '萬歲爺命雍親王胤禛恭代冬至南郊大祀，齋戒於齋所，不得擅離。',
+          yinsi: '萬歲爺忽召八阿哥胤禩入園侍疾，並命其恭代冬至南郊大祀。朝野譁然。',
+          yinti: '萬歲爺以八百里加急召撫遠大將軍王胤禵還京，命其抵京後恭代冬至南郊大祀。',
+        }[st.trueSuccessor];
+        return `萬歲爺自南苑行圍回鑾，偶感風寒，移駕暢春園靜養。冬至南郊大祀在即，聖躬不能親詣。\n\n${line}\n\n代天子祭天，非同小可。京中各府，徹夜燈火不熄。`;
+      },
+      choices: [
+        { text: st => `連夜備厚禮，投${heir(st).short}門下`, hint: '見風轉舵',
+          need: st => st.stats.jiaCai >= 15,
+          resolve: st => ({
+            s: { jiaCai: -15, qingWang: -8 }, f: { [st.trueSuccessor]: 20 }, align: st.trueSuccessor,
+            result: `${heir(st).title}府的門房收下了禮單，只回了一句：「主子知道了。」\n\n臨陣投靠的人太多，你只是其中之一。`,
+          }) },
+        { text: '以不變應萬變', hint: '天要變，非人力所能為',
+          result: '你照常上衙辦差。夜裡起了大風，吹得窗紙嘩嘩作響。' },
+        { text: st => `速將消息密報${st.align ? P(st.align).short : ''}`, hint: '與舊主同進退',
+          cond: st => !!st.align,
+          resolve: st => st.align === st.trueSuccessor
+            ? { s: { dangYuan: 4 }, f: { [st.align]: 8 },
+                result: `${P(st.align).short}聞訊，只淡淡說了一句：「知道了。」\n\n但你分明看見，他端茶的手，穩得出奇。` }
+            : { s: { dangYuan: 6, shengJuan: -5 }, f: { [st.align]: 10 },
+                result: `${P(st.align).title}府連夜閉門議事。你隱約覺得，自己已被牢牢綁上了一條船。` } },
+      ],
+    },
+
+    /* ----- 終章 龍馭上賓 ----- */
+    fin_night: {
+      chapter: 6, date: '康熙六十一年 十一月十三日', place: '暢春園・清溪書屋', title: '龍馭上賓', noUpkeep: true,
+      text: '戌時，暢春園傳出雲板之聲，連叩四響。\n\n萬歲爺龍馭上賓，享年六十九歲。步軍統領隆科多封鎖九門，於御榻前宣讀遺詔：',
+      rescriptLabel: '遺詔',
+      rescript: st => `${heir(st).order}${heir(st).name}，人品貴重，深肖朕躬，必能克承大統。著繼朕登基，即皇帝位。`,
+      textAfter: st => ({
+        yinreng: '咸安宮的鎖鏈在雪夜中卸下。被圈禁十年的廢太子踏出宮門時，須髮皆白。',
+        yinzhi: '誠親王府燈火通明，蒙養齋的翰林們連夜趕擬登極詔書。',
+        yinzhen: '九門提督的兵馬連夜封鎖京城。八爺黨人面如死灰，十四阿哥遠在西寧，聞訊拍案而起。',
+        yinsi: '八爺黨人彈冠相慶，雍親王府大門緊閉，徹夜無聲。',
+        yinti: '八百里加急飛馳西寧。大將軍王奉詔還京，正黃旗纛一路東來。',
+      }[st.trueSuccessor]),
+      choices: [
+        { text: '俯伏跪聽，叩首接旨', hint: '天命已定',
+          resolve: st => {
+            const succ = st.trueSuccessor, fav = st.favor[succ];
+            let result;
+            if (fav >= 20) result = '新君登極次日，便單獨召見了你。\n\n「潛邸舊人」四字，從此成了你身上最耀眼的印記。';
+            else if (st.align && st.align !== succ) result = `你所依附的${P(st.align).short}，在新朝已是過河的卒子。昔日門人紛紛改換門庭，你的黨援一夜星散。`;
+            else if (fav > 0) result = '新君記得你。在一份長長的名單上，你的名字旁畫了一個圈。';
+            else if (fav < 0) result = '新君記得你——記得的，是你當年那些不肯通融的事。';
+            else result = '新君對你並無印象。對新朝而言，你只是前朝留下的一名舊臣。';
+            return { s: accessionEffects(st), flags: { acceded: true }, result };
+          } },
+      ],
+    },
+
+    fin_choice: {
+      chapter: 6, date: st => `${reign(st)}元年 正月`, place: '紫禁城・養心殿', title: '新朝門檻', noUpkeep: true,
+      text: st => `新君${heir(st).name}御極，改元「${reign(st)}」。\n\n新朝甫立，雷厲風行：清查歷年錢糧虧空、整肅朋黨、密摺之制擴及督撫。昔日的兄弟，或封王、或圈禁；昔日的同僚，或騰達、或抄家。\n\n你在宦海浮沉十五載，此刻站在新朝的門檻上。案頭擺著兩份寫好的摺子——`,
+      textAfter: '古人云：「功成身退，天之道也。」可是新君肯不肯放你走，從來不由你說了算。',
+      choices: [
+        { text: '上《乞骸骨疏》，稱病告老', hint: '急流勇退',
+          resolve: st => finaleOutcome(st, 'retire') },
+        { text: '上《賀登極表》，請效犬馬之勞', hint: '再搏一程富貴',
+          resolve: st => finaleOutcome(st, 'stay') },
+      ],
+    },
+
+    /* ----- 餘章 年羹堯陷阱 ----- */
+    trap_rescript: {
+      chapter: 7, date: st => `${reign(st)}元年 二月`, place: '養心殿・硃批', title: '溫旨慰留', noUpkeep: true, noFatal: true,
+      text: st => st.flags.finaleIntent === 'retire'
+        ? '你本想全身而退。但新君的硃批，比你的辭呈長了三倍——'
+        : '新君握著你的手，眼眶微紅。次日發下的硃批，你讀了三遍——',
+      rescriptLabel: '硃批',
+      rescript: '朕不為出色之皇帝，不能酬賞爾待朕之意；爾不為超群之大臣，不能答應朕之知遇。我君臣做個千古君臣知遇榜樣，令天下後世欽慕流涎就是了。卿若言去，置朕於何地？著加太保銜，晉一等公，授撫遠大將軍印，總理西陲軍務。',
+      textAfter: '滿朝文武，從未見過如此恩寵。',
+      choices: [
+        { text: '感激涕零，叩謝天恩', hint: '士為知己者死',
+          s: { shengJuan: 30, dangYuan: 25, jiaCai: 20 }, flags: { trapped: true }, next: 'trap_glory',
+          result: '你接過撫遠大將軍印。一時間門庭若市，督撫藩臬皆以出你門下為榮，連王公貝勒見了你，也要先拱一拱手。' },
+        { text: '再上奏摺，三辭三讓', hint: '盛極當避',
+          s: { shengJuan: 30, dangYuan: 22, jiaCai: 15 }, flags: { trapped: true }, next: 'trap_glory',
+          result: '新君再發硃批：「卿再辭，便是不體朕心。」\n\n你只得受命。推辭本身，反倒讓滿朝都相信你「深得聖心」——你已無路可退。' },
+      ],
+    },
+
+    trap_glory: {
+      chapter: 7, date: st => `${reign(st)}二年 十月`, place: '京師・廣寧門外', title: '王公跪迎', noUpkeep: true, noFatal: true,
+      text: '你平定青海，凱旋入京。黃韁紫騮，郊迎之時，王公以下皆跪道相迎。\n\n新君賜你雙眼花翎、四團龍補服、黃帶、紫轡，賞賜之隆，本朝未有。你的奏摺可以直接批答地方督撫，你舉薦的人，吏部稱為「年選」。\n\n回府那夜，有人悄悄傳來新君在養心殿對近臣說的一句話——',
+      rescriptLabel: '天語',
+      rescript: '凡人臣圖功易，成功難；成功易，守功難；守功易，終功難。',
+      choices: [
+        { text: '坦然受之，此乃我應得', hint: '功高者自當受賞',
+          s: { dangYuan: 10, qingWang: -10 }, next: 'trap_fall',
+          result: '你在馬上安然受了王公們的跪拜。那一刻，京城的風似乎都在為你讓路。' },
+        { text: '上疏謙辭，遣散部分門客', hint: '亡羊補牢',
+          s: { dangYuan: -10, qingWang: 5 }, next: 'trap_fall',
+          result: '你遣散了半數門客，閉門讀書。可是門外的車馬，並沒有因此少一輛。\n\n樹大招風，從來與樹的意願無關。' },
+      ],
+    },
+
+    trap_fall: {
+      chapter: 7, date: st => `${reign(st)}三年 三月`, place: '杭州・將軍署', title: '夕惕朝乾', noUpkeep: true, noFatal: true,
+      text: '天現「日月合璧、五星聯珠」祥瑞，百官上表稱賀。你的賀表中，將「朝乾夕惕」誤寫作「夕惕朝乾」。\n\n旬日之間，風向驟變。你被調離西陲、改任杭州將軍；舊部被逐一撤換；彈劾你的摺子雪片般飛進養心殿。新君硃批——',
+      rescriptLabel: '硃批',
+      rescript: st => `${st.name}非粗心辦事之人，直不欲以「朝乾夕惕」四字歸之於朕耳。則其青海之功，朕亦在許與不許之間。`,
+      textAfter: '那道曾寫著「千古君臣知遇榜樣」的硃批，此刻還鎖在你的書匣裡。',
+      choices: [
+        { text: '上疏請罪，泣陳舊日之功', hint: '動之以情', ending: 'nian',
+          result: '你的請罪摺上，新君只批了一句：「爾功在何處？」\n\n十二月，九十二款大罪議定。' },
+        { text: '交出兵權，閉門待罪', hint: '束手就擒', ending: 'nian',
+          result: '你交出了撫遠大將軍印。新君說你「早該如此」，然後下旨鎖拿進京。' },
+        { text: '密聯舊部，以圖自保', hint: '困獸之鬥', ending: 'nian',
+          result: '你的密信還沒出杭州城，就擺在了養心殿的御案上。原來你身邊的每一個人，都是新君的眼睛。' },
+      ],
+    },
+  };
+
+  /* ---------------------------------------------------------------
+   * 十、隨機事件（填充時間軸）
+   * --------------------------------------------------------------- */
+  const FILLERS = [
+    { id: 'f_flood', title: '河決賑災', place: '山東・曹州府',
+      text: '黃河於曹州決口，十餘州縣盡成澤國，流民塞道。萬歲爺命你馳往督辦賑務。\n\n地方官遞上的冊子上，災民人數與實際相去甚遠——差額，自然進了某些人的口袋。',
+      choices: [
+        { text: '親赴災區，督放賑糧', hint: '以身犯險',
+          s: { shiWu: 8, qingWang: 6, shouYuan: -5 },
+          result: '你在泥水中奔走兩月，染了一身濕毒。災民立了一塊「青天」的木牌，被你命人撤了。' },
+        { text: '委派屬員，坐鎮府城', hint: '穩妥省力',
+          s: { shiWu: 2, jiaCai: 5, qingWang: -3 },
+          result: '賑務辦得四平八穩。屬員們孝敬的「辛苦錢」，你沒有推辭。' },
+        { text: '捐出俸銀，並參劾貪吏', hint: '清官難為',
+          s: { jiaCai: -12, qingWang: 10, shengJuan: 3, dangYuan: -4 },
+          result: '你參倒了一位知府。他的座師是吏部侍郎——這筆帳，總有人記著。' },
+      ] },
+    { id: 'f_gift', title: '冰敬炭敬', place: '京師・府邸',
+      text: '年關將近，門生故吏、地方督撫的「炭敬」紛紛送到府上。管家捧著禮單小聲報數：「老爺，光是兩江那邊，就有三千兩。」\n\n這是官場慣例，誰都收；但也正因誰都收，誰都可能因此被參。',
+      choices: [
+        { text: '照單全收', hint: '人情往來',
+          s: { jiaCai: 12, dangYuan: 4, qingWang: -4 },
+          result: '銀子入了庫，人情也記在了帳上。你知道，這些「孝敬」遲早要還。' },
+        { text: '一概璧還', hint: '潔身自好',
+          s: { qingWang: 6, dangYuan: -5 },
+          result: '送禮的人碰了一鼻子灰，回去說你「不近人情」。' },
+        { text: '收下，轉捐京師書院', hint: '兩全之策',
+          s: { jiaCai: 2, qingWang: 4, dangYuan: 2 },
+          result: '人情收了，名聲也掙了。只是書院山長的謝帖上，把數目寫得清清楚楚。' },
+      ] },
+    { id: 'f_ill', title: '偶染沉痾', place: '京師・府邸',
+      text: '入冬後你咳嗽不止，夜不能寐。大夫說是積勞所致，須得靜養三月。\n\n可衙門裡的差事，一日也停不得。',
+      choices: [
+        { text: '延請太醫，閉門靜養', hint: '破財保命',
+          s: { jiaCai: -10, shouYuan: 7, shiWu: -2 },
+          result: '太醫院的方子果然靈驗。開春時，你已能在院中打一套太極。' },
+        { text: '帶病辦差', hint: '鞠躬盡瘁',
+          s: { shiWu: 5, shengJuan: 3, shouYuan: -8 },
+          result: '萬歲爺聽說你帶病入值，賜了一盒人參。你吃了，咳得更厲害了。' },
+        { text: '服民間偏方', hint: '聽天由命',
+          resolve: () => Math.random() < 0.5
+            ? { s: { shouYuan: 4, jiaCai: -1 }, result: '偏方竟然奏效，半月便痊癒了。' }
+            : { s: { shouYuan: -7, jiaCai: -1 }, result: '偏方喝下去，你上吐下瀉三日，險些丟了半條命。' } },
+      ] },
+    { id: 'f_book', title: '南山集案', place: '刑部大堂',
+      text: '翰林院編修戴名世《南山集》中用南明年號，被左都御史趙申喬參劾，牽連數百人。\n\n案卷中赫然有你一位舊友的名字——他曾為《南山集》作序。舊友的家人跪在你府門外，已經一天一夜。',
+      choices: [
+        { text: '上疏為其緩頰', hint: '冒險救友',
+          s: { qingWang: 10, shengJuan: -8 },
+          result: '舊友免於一死，改為流放黑龍江。萬歲爺在你的摺子上批了一句：「爾與此人交情不淺。」' },
+        { text: '閉門不見，劃清界限', hint: '自保為上',
+          s: { shengJuan: 3, qingWang: -7 },
+          result: '府門外的哭聲停了。你在書房裡坐了一夜，把舊友的詩集投進了火盆。' },
+        { text: '暗中資助其家眷離京', hint: '默默行善',
+          s: { jiaCai: -8, qingWang: 4 },
+          result: '你托人送去五百兩銀子。無人知曉，也無人致謝。' },
+      ] },
+    { id: 'f_exam', title: '順天鄉試', place: '順天府貢院',
+      text: '你奉旨充任順天鄉試主考。入闈前夜，有人遞來一張小條，上寫七個考生的名字，和「每人一千兩」。\n\n另有幾家王府的門人，也托人帶話「照應照應」。',
+      choices: [
+        { text: '秉公取士，閉門謝客', hint: '為國掄才',
+          s: { qingWang: 10, dangYuan: 5 },
+          result: '放榜之日，寒門士子居多。新科舉人們登門拜謝座師，你的門生錄又厚了一頁。' },
+        { text: '收受關節', hint: '一本萬利',
+          resolve: () => Math.random() < 0.3
+            ? { s: { jiaCai: 10, qingWang: -12, shengJuan: -18 },
+                result: '落第舉子抬著財神像遊街，科場案發。你被革職留任，罰俸三年。' }
+            : { s: { jiaCai: 20, qingWang: -8 },
+                result: '七個名字都上了榜。銀票藏在書匣夾層裡，你夜裡總睡不安穩。' } },
+        { text: '照應王府門人', hint: '結交皇子',
+          resolve: () => {
+            const ids = ['yinzhi', 'yinzhen', 'yinsi', 'yinti'];
+            const p = ids[Math.floor(Math.random() * ids.length)];
+            return { s: { dangYuan: 8, qingWang: -3 }, f: { [p]: 8 },
+              result: `${P(p).title}府上的門人中了舉，王府送來一對玉如意。` };
+          } },
+      ] },
+    { id: 'f_salt', title: '兩淮鹽課', place: '揚州・兩淮鹽運司',
+      text: '兩淮鹽課積欠二百萬兩，萬歲爺命你南下核查。\n\n揚州鹽商在瘦西湖畫舫上為你接風。席間總商笑吟吟地遞上一本帳冊：「大人，這是孝敬您的乾股。」',
+      choices: [
+        { text: '嚴查積欠，追繳入庫', hint: '得罪鹽商',
+          s: { shiWu: 10, dangYuan: -6, shengJuan: 4 },
+          result: '你追回積欠一百二十萬兩。揚州城裡，有人在你的轎子上潑了糞。' },
+        { text: '收下乾股，草草結案', hint: '和光同塵',
+          s: { jiaCai: 15, qingWang: -5, shiWu: -2 },
+          result: '你帶著一箱「揚州土產」回京。覆命摺上，積欠成了「商力疲敝，請緩徵」。' },
+        { text: '虛應故事，兩不得罪', hint: '遊山玩水',
+          s: { shouYuan: 2, shiWu: -4 },
+          result: '你在揚州遊山玩水三月，回京覆命時，摺子寫得滴水不漏。' },
+      ] },
+    { id: 'f_banquet', title: '千叟盛宴', place: '暢春園',
+      text: '萬歲爺萬壽，於暢春園大開千叟宴，六十五歲以上老臣、耆民千餘人與宴。你奉命襄理宴務。\n\n席間萬歲爺興致甚高，命群臣賦詩。',
+      choices: [
+        { text: '獻詩頌聖，辭藻華麗', hint: '博君一笑',
+          s: { shengJuan: 4, qingWang: -2, jiaCai: -3 },
+          result: '萬歲爺擊節稱善，賞你御筆「福」字一幅。士林中卻有人說你的詩「諛詞滿紙」。' },
+        { text: '盡心襄理，不求表現', hint: '踏實辦差',
+          s: { shiWu: 5, shouYuan: 2 },
+          result: '宴席井井有條。散席後，內務府總管拍著你的肩膀說：「辛苦。」' },
+        { text: '借機結交王公宗室', hint: '廣結善緣',
+          s: { dangYuan: 8, jiaCai: -6 },
+          result: '一夜之間，你與三位貝勒、兩位貝子稱兄道弟。酒醒之後，你有些記不清自己許了什麼。' },
+      ] },
+    { id: 'f_kin', title: '族人求官', place: '京師・府邸',
+      text: '老家族兄千里進京，帶著一車土產和兒子，跪求你為其子謀一個縣丞的缺。\n\n「都是一個祖宗的骨血，」族兄老淚縱橫，「你如今是京官，抬抬手的事。」',
+      choices: [
+        { text: '修書吏部，代為舉薦', hint: '提攜宗親',
+          s: { dangYuan: 5, qingWang: -4, jiaCai: 4 },
+          result: '侄兒補了缺，族中送來千兩謝儀。只是吏部那位郎中看你的眼神，多了幾分意味深長。' },
+        { text: '婉言回絕，贈銀返鄉', hint: '公私分明',
+          s: { qingWang: 4, jiaCai: -5, dangYuan: -2 },
+          result: '族兄拿著銀子走了，臨行前在祠堂裡罵你「忘本」。' },
+        { text: '收為幕僚，親自調教', hint: '培植親信',
+          s: { shiWu: 4, jiaCai: -3, dangYuan: 2 },
+          result: '侄兒聰明伶俐，半年便能替你起草公文。你開始有了一個信得過的人。' },
+      ] },
+  ];
+
+  /* ---------------------------------------------------------------
+   * 十一、結局
+   * --------------------------------------------------------------- */
+  const nianName = st => st.trueSuccessor === 'yinzhen' ? '撫遠大將軍年羹堯' : '新朝那位權傾一時的撫遠大將軍';
+
+  const ENDINGS = {
+    nian: {
+      type: 'bad', badge: '凶終', title: '鳥盡弓藏', sub: '年羹堯之局',
+      text: st => `${reign(st)}三年十二月，議政王大臣會議列你大罪九十二款：大逆五、欺罔九、僭越十六、狂悖十三、專擅六、忌刻六、殘忍四、貪婪十八、侵蝕十五。\n\n奏請將你立正典刑。新君硃批：念其青海之功，格外施恩，令其獄中自裁。\n\n白綾懸梁之前，你想起那道溫言軟語的硃批——「做個千古君臣知遇榜樣」。原來「榜樣」二字，從來是寫給天下人看的。\n\n你的兒子們被發往極邊充軍，家產籍沒入官。京城的茶館裡，說書人講起你的故事，總要加一句：「可惜了。」`,
+      epitaph: '聖眷是借來的，終究要連本帶利地還。',
+    },
+    safe: {
+      type: 'good', badge: '善終', title: '急流勇退', sub: '告病還鄉',
+      text: st => `${reign(st)}元年春，你以原官致仕。出廣渠門那日，送行者寥寥，你也不以為意。\n\n回到江南老家，你在祖宅後院種了一株梅，每日讀書、課孫、垂釣。新朝的邸報偶爾傳來：清查虧空、攤丁入畝、耗羨歸公……一樁樁、一件件，都與你無關了。\n\n${reign(st)}三年冬，又一份邸報傳來：${nianName(st)}被列大罪九十二款，賜死獄中。\n\n你放下邸報，望著窗外的老梅，良久無言。那個位置，本來也可能是你的。`,
+      epitaph: '功成身退，天之道也。',
+    },
+    purge: {
+      type: 'bad', badge: '凶終', title: '黨禍株連', sub: '圈禁抄沒',
+      text: st => {
+        const a = P(st.align || 'yinsi');
+        const insult = a.id === 'yinsi' ? '並被勒令改名「阿其那」' : '被除宗籍、幽禁高牆';
+        return `${reign(st)}元年，新君下詔整肅朋黨。${a.order}${a.name}被削去爵位，${insult}。\n\n你身為${a.short}門下舊人，被列入黨羽名冊。都察院連上十二道參本，罪名從「結黨營私」一路寫到「窺伺神器」。\n\n抄家那日，番役從你書房夾牆裡搜出當年與${a.title}府往來的書札，一封一封唸出來，滿院子的人都低著頭。\n\n你被發往寧古塔，給披甲人為奴。出山海關時，正下著那年冬天的第一場雪。`;
+      },
+      epitaph: '從龍之功，押錯了龍，便是滅門之禍。',
+    },
+    confiscate: {
+      type: 'bad', badge: '凶終', title: '抄家籍沒', sub: '家財招禍',
+      text: st => `${reign(st)}元年，新君下旨清查天下錢糧虧空，凡家資來歷不明者，一律嚴查。\n\n都察院的參本上，列著你的家產：京師宅邸三處、江南良田四千畝、當鋪兩座、古玩字畫不計其數。這些年積攢的每一兩銀子，都成了罪證。\n\n抄家的番役進門時，你的老管家還在喊「我家老爺是前朝老臣」。沒有人理會他。\n\n京城百姓私下稱新君為「抄家皇帝」——而你，是他抄的第一批。你被革職，發往軍台效力贖罪。`,
+      epitaph: '財多累身。新君最缺的，正是銀子。',
+    },
+    dismissed: {
+      type: 'neutral', badge: '平局', title: '罷黜歸田', sub: '新朝不錄',
+      text: st => `你在新朝沒有舊恩可念，也沒有大罪可究。吏部的文書很快下來：「著即休致。」\n\n回鄉的路上沒有人送行。你在老家閒居十餘年，看著新朝的人與事一樁樁從邸報上掠過。偶爾有後生問起你在京城的往事，你只是搖頭。\n\n史書上關於你，只有一行字：「康熙中官戶部，${reign(st)}初休致。」`,
+      epitaph: '不被記恨，也不被記得。',
+    },
+    deficit: {
+      type: 'neutral', badge: '平局', title: '追賠虧空', sub: '清貧之累',
+      text: () => '你經手的舊帳中，有三萬兩銀子對不上。\n\n這筆虧空未必是你貪的——或許是前任遺留，或許是屬員侵吞——但新朝的規矩是「誰經手，誰賠補」。\n\n你家無餘財，只得變賣祖產、典當妻子的首飾，仍差一萬二千兩。限期一到，你被拘於刑部，直到族人湊足銀子才得放還。\n\n出獄那日，你兩鬢全白。清官難做，清貧的清官更難。',
+      epitaph: '兩袖清風，填不了戶部的窟窿。',
+    },
+    stay: {
+      type: 'neutral', badge: '未完', title: '宦海未已', sub: '留任新朝',
+      text: st => `你留在了新朝。${reign(st)}年間的官場與前朝截然不同：密摺遍布天下，每一道政令都雷厲風行，每一個官員都如履薄冰。\n\n你不是新君的心腹，也不是他的仇人。你只是兢兢業業地辦差，小心翼翼地說話，在每一份摺子上反覆推敲每一個字——尤其是「朝乾夕惕」這四個字。\n\n你的故事還沒結束。但在這位新君手下，故事從來不由臣子來寫。`,
+      epitaph: '伴君如伴虎，你又上了虎背。',
+    },
+    death: {
+      type: 'bad', badge: '卒', title: '卒於任上', sub: '積勞成疾',
+      text: st => `${st.current ? st.current.date : ''}，你在衙署值房中伏案而逝，手邊還壓著一份未批完的錢糧冊子。\n\n萬歲爺聞訊，賜祭葬如例。九子奪嫡的結局，你終究沒能看到。\n\n多年後有人翻檢你的遺物，在書匣夾層中找到一本小冊子，上面密密麻麻記著各位皇子的動向——那是你用盡半生心力寫成的「情報簿」。`,
+      epitaph: '鞠躬盡瘁，死而後已——只是沒人看見。',
+    },
+    disgrace: {
+      type: 'bad', badge: '凶終', title: '天威難測', sub: '革職拿問',
+      text: () => '硃批只有八個字：「此人斷不可用，革職拿問。」\n\n聖眷一盡，昔日的同僚紛紛上摺劃清界限，門生故吏避之唯恐不及。刑部的人來時，你正在書房裡寫最後一份請罪摺。\n\n你被革職查辦，雖保住了性命，卻再也沒能回到朝堂。九子奪嫡的結局，你只能在流放地的風雪中，從往來商旅口中聽說。',
+      epitaph: '聖眷一盡，萬事皆休。',
+    },
+  };
+
+  return {
+    CONFIG, STATS, PRINCES, PRINCE_ORDER, CHAPTERS, CHANNELS, CLUES,
+    TIMELINE, EVENTS, FILLERS, ENDINGS, VERDICT_LABEL,
+    judgeFinale, finaleOutcome, accessionEffects,
+  };
+})();
+
+</script>
+<script>
+/* 擴充敘事為架空互動；人物關係不等同史實。 */
+'use strict';
+(() => {
+  const D = GameData;
+  D.SUCCESSOR_WEIGHTS = {yinreng:20, yinzhi:20, yinzhen:20, yinsi:20, yinti:20};
+  D.drawSuccessor = (random = Math.random) => {
+    let roll = random() * Object.values(D.SUCCESSOR_WEIGHTS).reduce((a,b)=>a+b,0);
+    for(const id of D.PRINCE_ORDER) {roll -= D.SUCCESSOR_WEIGHTS[id];if(roll < 0) return id;}
+    return D.PRINCE_ORDER[D.PRINCE_ORDER.length-1];
+  };
+  D.MINISTERS = {
+    zhang: {name:'張廷玉', desc:'慎密持重 · 以文書與實務結交', cost:{shiWu:2}, gain:{shiWu:4,qingWang:2}, text:'你與張廷玉校讀錢糧文書，爭論一處措辭至深夜。他把一份整理好的舊案交給你：「辦事先留憑據。」'},
+    long: {name:'隆科多', desc:'掌握門禁 · 結交須付人情代價', cost:{jiaCai:5}, gain:{dangYuan:4,qingWang:-2}, text:'隆科多收下你的拜帖，只談九門輪值，不談儲位。臨別時，他允你日後急事可托人通報。'},
+    tong: {name:'佟國維', desc:'門生故吏 · 交好牽動八爺黨脈', cost:{jiaCai:4}, gain:{dangYuan:3,shengJuan:-1}, text:'你到佟府請教舊例，席間盡是八爺門下故人。佟國維替你引見兩位同僚，這份人情，也把你拉近了八爺的圈子。', favor:{yinsi:3}}
+  };
+  // 在既有終章前新增三章；保留所有原劇情索引的對應。
+  Object.values(D.EVENTS).forEach(e=>{if(e.chapter >= 6)e.chapter += 3;});
+  D.CHAPTERS.splice(6,0,{num:'柒',name:'翰苑藏鋒'},{num:'捌',name:'九門風聲'},{num:'玖',name:'故宮餘燼'});
+  D.CONFIG.MEMORIAL_LAST_CHAPTER = 8;
+  const added = {
+    ex_zhang:{chapter:6,date:'康熙六十年 春',place:'翰林院・值房',title:'筆底留痕',text:'張廷玉邀你核對一道錢糧諭旨。舊冊與新稿相差萬兩，旁人勸你莫生枝節。他停筆看你：「今日一字，來日便是一條罪名。」',choices:[
+      {text:'與張廷玉逐筆查核',hint:'張廷玉親疏 +12；實務 +6；壽元 −2',m:{zhang:12},s:{shiWu:6,shouYuan:-2},result:'你們查明是轉運帳重複入冊。張廷玉將你的名字寫進覆核名單。'},
+      {text:'依新稿照錄，免傷同僚',hint:'張廷玉親疏 −8；黨援 +5',m:{zhang:-8},s:{dangYuan:5},result:'文書順利送出。張廷玉此後再不把關鍵舊冊交給你。'}]},
+    ex_princes:{chapter:6,date:'康熙六十年 夏',place:'京師・書齋',title:'兩封手書',text:'四爺送來錢糧條陳，三爺送來修書稿本。兩位都希望你親自回覆，同僚們也在看你今晚往哪座府門走。',choices:[
+      {text:'赴雍王府議錢糧',hint:'四爺親疏 +10；實務 +4',f:{yinzhen:10},s:{shiWu:4},result:'四爺逐項問到糧價與運費，末了說：「你是肯辦事的人。」'},
+      {text:'赴誠王府校書',hint:'三爺親疏 +10；清望 +4',f:{yinzhi:10},s:{qingWang:4},result:'三爺與你談至月上中天，把你列入修書薦舉名單。'},
+      {text:'各復一信，仍留衙署',hint:'三爺、四爺親疏各 +3；壽元 −2',f:{yinzhen:3,yinzhi:3},s:{shouYuan:-2},result:'你兩邊都不失禮，也兩邊都沒成為心腹。'}]},
+    ex_long:{chapter:7,date:'康熙六十年 冬',place:'京師・步軍衙門',title:'九門夜話',text:'隆科多請你核定門禁名冊。一名舊識求你把八爺府的車馬補登在例外名單上。隆科多沒有催促，只把空白筆帖推到你面前。',choices:[
+      {text:'照例核查，不留私門',hint:'隆科多親疏 +10；實務 +4；八爺親疏 −4',m:{long:10},f:{yinsi:-4},s:{shiWu:4},result:'隆科多點頭：「名冊之外，誰的車也別放。」你與他有了共事的默契。'},
+      {text:'替八爺府補登',hint:'八爺親疏 +12；隆科多親疏 −6',m:{long:-6},f:{yinsi:12},align:'yinsi',result:'八爺府送來謝帖。隆科多卻讓人另抄了一份名冊，封進匣中。'}]},
+    ex_west:{chapter:7,date:'康熙六十一年 春',place:'戶部・西陲糧案',title:'西來家書',text:'十四爺自西陲來信，軍需遲滯，希望你替他催辦。信末卻另添一句：「京中若有大事，望莫相瞞。」回信可以只是公事，也可以是投名狀。',choices:[
+      {text:'調撥糧餉，親筆回覆軍情',hint:'十四爺親疏 +15；實務 +4；家財 −5',need:s=>s.stats.jiaCai>=5,f:{yinti:15},s:{shiWu:4,jiaCai:-5},result:'糧車如期啟程。十四爺回贈一柄短刀，說他記得這份雪中送炭。'},
+      {text:'密報京中動向，表明追隨',hint:'依附十四爺；親疏 +20；聖眷 −5',f:{yinti:20},align:'yinti',s:{shengJuan:-5},result:'十四爺回信只寫：「事定之日，不負故人。」你知道，自己已經押下了注。'},
+      {text:'按部就班，以公文作答',hint:'實務 +3；十四爺親疏 −3',f:{yinti:-3},s:{shiWu:3},result:'你沒有誤軍需，也沒有接下信末那句話。'}]},
+    ex_tong:{chapter:8,date:'康熙六十一年 夏',place:'京師・佟府',title:'舊臣的棋局',text:'佟國維在私席上重提舉儲往事。八爺的門人問你：「天下歸心，難道也算錯？」你抬頭時，看見席外一名家僕正仔細記住賓客面孔。',choices:[
+      {text:'替八爺陳說，與佟氏結盟',hint:'佟國維親疏 +15；八爺親疏 +10；聖眷 −5',m:{tong:15},f:{yinsi:10},align:'yinsi',s:{shengJuan:-5,dangYuan:5},result:'佟國維親自送你出門。這份體面，明日便會傳遍京城。'},
+      {text:'只談舊例，不談儲位',hint:'佟國維親疏 +3；清望 +3',m:{tong:3},s:{qingWang:3},result:'你把話題引回朝廷典章。佟國維笑說你謹慎，卻也沒有趕你走。'}]},
+    ex_crown:{chapter:8,date:'康熙六十一年 秋',place:'咸安宮・宮門外',title:'咸安秋雨',text:'廢太子的舊人托你送藥入宮，另附一封未署名的請復儲草稿。雨打宮門，誰也不知裡面的人，還有沒有再出來的一天。',choices:[
+      {text:'以私俸送藥，附親筆問候',hint:'廢太子親疏 +15；家財 −6；清望 +3',need:s=>s.stats.jiaCai>=6,f:{yinreng:15},s:{jiaCai:-6,qingWang:3},result:'宮內回贈一頁舊字帖，紙角題著：「患難見人心。」'},
+      {text:'冒險具名請復儲',hint:'依附廢太子；親疏 +22；聖眷 −8',f:{yinreng:22},align:'yinreng',s:{shengJuan:-8},result:'摺子留中。咸安宮傳出一句話：「若有重見天日之時，必記此名。」'},
+      {text:'退回草稿，只循例送藥',hint:'廢太子親疏 +3；實務 +2',f:{yinreng:3},s:{shiWu:2},result:'你在藥冊上蓋了官印，將未署名的紙投入火盆。'}]}
+  };
+  Object.values(added).forEach(e=>{e.noUpkeep=true;}); // 延長敘事，不額外加速老死。
+  Object.assign(D.EVENTS,added);
+  D.TIMELINE.splice(D.TIMELINE.findIndex(e=>e.id==='fin_night'),0,...Object.keys(added).map(id=>({id})));
+})();
+
+</script>
+<script>
+/* 遊戲擬史評：純函式依本局決策與結局生成，不引用史書原文。 */
+'use strict';
+GameData.careerCommentary = function(st) {
+  const D = GameData, s = st.stats, career = st.career || [];
+  const decisions = career.filter(e=>e.kind === 'decision');
+  const sum = key => career.reduce((n,e)=>n + ((e.effects || {})[key] || 0),0);
+  const opening = st.flags.acceded
+    ? `${st.name}，康熙中為戶部郎中。值儲位屢更，諸王競進，內外臣工，各有所持。及${D.PRINCES[st.trueSuccessor].name}嗣位，舊臣進退，遂繫於新朝之取舍。`
+    : `${st.name}，康熙中為戶部郎中。當儲位未定之際，諸王延攬，朝論紛紜，士大夫處其間，進退皆難。`;
+  const conduct = sum('qingWang') >= 10
+    ? '觀其行事，頗知惜名，於取予之際，尚有所守。'
+    : sum('qingWang') <= -10
+      ? '其周旋權門，屢以名節易便利；所得雖近，而士論漸薄矣。'
+      : '其行事多所權衡，既欲全名，亦未能盡絕人情之累。';
+  const work = sum('shiWu') >= 15 || s.shiWu >= 65
+    ? '至於簿書錢穀，能究其委曲，非徒以辭色取容者。'
+    : sum('shiWu') <= -8 || s.shiWu < 30
+      ? '然案牘之務，未見深究，徒工應對，終不足濟實事。'
+      : '辦差循例，才未足以獨任艱鉅，亦非全無可取。';
+  let allegiance;
+  if(st.align) {
+    const prince = D.PRINCES[st.align];
+    allegiance = `其與${prince.title}${prince.name}相結，遂以出處繫一門。`;
+    if(st.flags.acceded) allegiance += st.align === st.trueSuccessor
+      ? '所附既登大寶，世遂目為潛邸舊人；然知遇之厚，亦禍福所伏也。'
+      : '及所附失勢，向日書札，皆可為今日罪案。';
+  } else allegiance = '未嘗明附一邸，於諸王之間，猶存自守之意；然不立門戶，亦未必能外於黨論。';
+  const intimates = Object.entries(st.ministers || {}).filter(([,n])=>n>=24).map(([id])=>D.MINISTERS[id].name);
+  const ministers = intimates.length ? `與${intimates.join('、')}往還尤密，得其引援；人脈之助與牽累，蓋相隨而至。` : '';
+  const verdicts = {
+    safe:'卒能引疾乞休，留身而去。論者謂其無赫赫之功，而知止之明，勝於貪榮競進者多矣。',
+    nian:'既受溫旨慰留，復膺重寄，恩寵之隆，一時無兩。俄而威權為忌，身名俱裂。論曰：以人主之私恩為可久恃，而忘君臣之勢不相容，其敗豈一朝一夕之故哉！',
+    purge:'終以黨籍得禍，遠謫塞外。儲爭之中，恩義與利害交錯，一念所託，竟成終身之累。惜其以臣子之身，預定天家之局也。',
+    confiscate:'終以家資招議，籍沒遠徙。財足以養身，亦足以召禍；取之不問其源，藏之不知其戒，雖有他長，何以自解？',
+    dismissed:'新朝不用，罷歸田里。無顯榮，亦免大戮。其身雖存，而平生志業，遂付流水，亦足悲夫。',
+    deficit:'既許歸田，復責舊逋，鬻產猶不足償。清貧未足證無過，經手亦未必皆私取；官箴之難，在責有所歸，而情未必盡得也。',
+    stay:'遂留新朝，復治案牘。榮辱未定，史筆姑存其實，而不遽論其終。其後能否慎始敬終，尚俟來者。',
+    death:'未及見儲位之定，遽卒於官。以有限之精神，役於無窮之事，功名未就而身先殞，亦仕途之可哀者也。',
+    disgrace:'聖眷既衰，遂遭斥逐。向之門庭往還者，皆避而遠之。始知依勢而集者，不足恃為患難之交也。'
+  };
+  const episodes = decisions.filter(e=>e.title).filter((e,i,a)=>a.findIndex(x=>x.title===e.title)===i);
+  const selected = [episodes[0], episodes.find(e=>e.chapter>=6 && e.chapter<=8), episodes[episodes.length-1]].filter(Boolean).filter((e,i,a)=>a.indexOf(e)===i);
+  const evidence = selected.length ? '案牘所錄：' + selected.map(e=>`「${e.title}」一案，擇「${e.choice}」`).join('；') + '。' : '';
+  return {text:[opening, conduct+work, allegiance+ministers, verdicts[st.ending] || '其生平出處，當俟後論。'].join('\n\n'), evidence};
+};
+
+</script>
+<script>
+'use strict';
+const D = GameData;
+const $ = id => document.getElementById(id);
+const value = x => typeof x === 'function' ? x(state) : (x || '');
+const pick = list => list[Math.floor(Math.random() * list.length)];
+const clamp = x => Math.max(0, Math.min(100, x));
+let state, pending;
+function reset() {
+  state = { name: '沈慎言', stats: {...D.CONFIG.START}, trueSuccessor: D.drawSuccessor(), favor: Object.fromEntries(D.PRINCE_ORDER.map(id => [id, 0])), ministers: Object.fromEntries(Object.keys(D.MINISTERS).map(id=>[id,0])), socialUsed: false, socialReply: '', align: null, flags: {}, turn: 0, career: [], log: [], ended: false, probes: 0 };
+  pending = null;
+  loadTurn();
+  record('康熙四十七年 · 入仕\n儲位未定，先守好自己的方寸。');
+  render();
+}
+function record(text) {state.log.unshift(text);}
+function change(changes = {}, target = state.stats) {for (const [key, n] of Object.entries(changes)) target[key] = target === state.stats ? clamp(target[key] + n) : Math.max(-100, Math.min(100, target[key] + n));}
+function loadTurn(id) {
+  const entry = D.TIMELINE[state.turn];
+  state.current = id ? D.EVENTS[id] : entry.filler ? {...pick(D.FILLERS), chapter: entry.chapter, date: entry.date} : D.EVENTS[entry.id];
+  state.probes = 0;state.socialUsed = false;state.socialReply = '';
+}
+function render() {
+  renderRelations();
+  $('stats').replaceChildren();
+  D.STATS.forEach(stat => {
+    const row = document.createElement('div'); row.className = 'stat';
+    row.innerHTML = `<div class="statrow"><span>${stat.name}<small>${stat.sub}</small></span><b>${state.stats[stat.key]} <small>/ 100</small></b></div><div class="track"><span style="width:${state.stats[stat.key]}%"></span></div>`;
+    $('stats').append(row);
+  });
+  $('alignment').textContent = state.align ? D.PRINCES[state.align].title + '門下' : '未附任何皇子';
+  $('log').replaceChildren(...state.log.map(text => {const li = document.createElement('li'); li.textContent = text; return li;}));
+  const e = state.ended ? D.ENDINGS[state.ending] : state.current;
+  $('chapter').textContent = state.ended ? '終卷 · ' + e.badge : '第' + D.CHAPTERS[e.chapter].num + '章 · ' + D.CHAPTERS[e.chapter].name;
+  $('date').textContent = state.ended ? '榮辱落定' : value(e.date);
+  $('place').textContent = state.ended ? 'THE FINAL RECORD' : value(e.place);
+  $('title').textContent = e.title;
+  $('story').textContent = value(e.text);
+  $('rescript').hidden = !e.rescript;
+  $('rescript').textContent = value(e.rescript);
+  $('after').textContent = state.ended ? e.epitaph : value(e.textAfter);
+  $('chronicle').hidden = !state.ended;
+  if(state.ended) {
+    const commentary = D.careerCommentary(state);
+    $('chronicle-text').textContent = commentary.text;
+    $('chronicle-evidence').textContent = commentary.evidence;
+  }
+  $('feedback').textContent = pending ? pending.result || '' : '';
+  $('progress').textContent = `案卷 ${Math.min(state.turn + 1, D.TIMELINE.length)} / ${D.TIMELINE.length}`;
+  $('probe').disabled = state.ended || !!pending || state.current.chapter > D.CONFIG.MEMORIAL_LAST_CHAPTER || state.probes >= 2;
+  $('choices').replaceChildren();
+  if (state.ended) addChoice('再入宦海', '重新隨機抽取繼承人', reset);
+  else if (pending) addChoice('收起案卷，繼續', '承受這一筆的代價', advance);
+  else e.choices.filter(c => !c.cond || c.cond(state)).forEach(c => {
+    const button = addChoice(value(c.text), value(c.hint), () => choose(c));
+    if(c.need) button.disabled = !c.need(state);
+  });
+}
+function addChoice(text, hint, action) {
+  const b = document.createElement('button');const wrap = document.createElement('span');
+  wrap.textContent = text;const sub = document.createElement('small');sub.textContent = hint;sub.style.display = 'block';wrap.append(sub);b.append(wrap);b.onclick = action;$('choices').append(b);return b;
+}
+function choose(choice) {
+  if(pending || state.ended) return;
+  const outcome = {...choice, ...(choice.resolve ? choice.resolve(state) : {})};
+  state.career.push({kind:'decision',title:state.current.title,chapter:state.current.chapter,choice:value(choice.text),effects:{...outcome.s}});
+  change(outcome.s);change(outcome.f, state.favor);change(outcome.m, state.ministers);
+  if(outcome.align) state.align = outcome.align;
+  Object.assign(state.flags, outcome.flags || {});
+  if(!state.current.noUpkeep) change(D.CONFIG.UPKEEP);
+  pending = {...outcome, result: value(outcome.result)};
+  record(value(choice.text) + '\n' + pending.result);
+  if(!state.current.noFatal) {
+    if(state.stats.shouYuan <= 0) pending.ending = 'death';
+    else if(state.stats.shengJuan <= 0) pending.ending = 'disgrace';
+  }
+  render();
+}
+function advance() {
+  const outcome = pending;pending = null;
+  if(outcome.ending) {state.ended = true;state.ending = outcome.ending;record('結局 · ' + D.ENDINGS[outcome.ending].title);}
+  else if(outcome.next) loadTurn(outcome.next);
+  else {state.turn++;loadTurn();}
+  render();
+}
+function renderRelations() {
+  const locked = state.ended || !!pending || state.socialUsed || state.current.chapter >= 9;
+  function row(name, score, action, disabled, hint) {
+    const el = document.createElement('div');el.className = 'relation';
+    const label = document.createElement('span');label.textContent = name;
+    const number = document.createElement('strong');number.textContent = (score > 0 ? '+' : '') + score;
+    label.append(number);el.append(label);
+    const bar = document.createElement('meter');bar.min=-100;bar.max=100;bar.value=score;bar.setAttribute('aria-label',name+'親疏');el.append(bar);
+    const button = document.createElement('button');button.textContent=action;button.disabled=disabled;button.title=hint;el.append(button);return [el,button];
+  }
+  $('prince-relations').replaceChildren();
+  D.PRINCE_ORDER.forEach(id=>{
+    const p=D.PRINCES[id];const [el,b]=row(p.short+' · '+p.name,state.favor[id],'拜會',locked || state.stats.jiaCai<3,'家財 −3；親疏 +6。每案共用一次交遊。');
+    b.onclick=()=>social('prince',id);$('prince-relations').append(el);
+  });
+  $('minister-relations').replaceChildren();
+  Object.entries(D.MINISTERS).forEach(([id,m])=>{
+    const insufficient=Object.entries(m.cost).some(([k,n])=>state.stats[k]<n);
+    const cost=Object.entries(m.cost).map(([k,n])=>D.STATS.find(s=>s.key===k).name+' −'+n).join('、');
+    const [el,b]=row(m.name,state.ministers[id],'請益',locked || insufficient,m.desc+'；'+cost+'；親疏 +8。');
+    const info=document.createElement('small');info.textContent=cost+' · 親疏 +8';el.append(info);
+    b.onclick=()=>social('minister',id);$('minister-relations').append(el);
+  });
+  $('social-reply').textContent=state.socialReply || (state.socialUsed?'本案已交遊，待下一案再訪。':'拜會皇子：家財 −3，親疏 +6。');
+}
+function social(type,id) {
+  if(state.ended || pending || state.socialUsed || state.current.chapter>=9) return;
+  let text;
+  if(type==='prince') {
+    if(state.stats.jiaCai<3)return;
+    change({jiaCai:-3});change({[id]:6},state.favor);
+    text='你赴'+D.PRINCES[id].title+'府請安，談過近來差事。門人送你到二門，彼此又熟悉了一分。';
+  } else {
+    const m=D.MINISTERS[id];if(Object.entries(m.cost).some(([k,n])=>state.stats[k]<n))return;
+    change(Object.fromEntries(Object.entries(m.cost).map(([k,n])=>[k,-n])));change(m.gain);state.career.push({kind:'social',effects:{...m.gain}});change(m.favor,state.favor);change({[id]:8},state.ministers);text=m.text;
+    if(state.ministers[id]>=24 && !state.flags['help_'+id]) {
+      state.flags['help_'+id]=true;
+      const bonuses={zhang:{shiWu:6,qingWang:4},long:{dangYuan:6},tong:{dangYuan:6,jiaCai:4}};
+      change(bonuses[id]);text+='\n累積親疏達 24，'+m.name+'首次為你引薦助力，額外獲得：'+Object.entries(bonuses[id]).map(([k,n])=>D.STATS.find(s=>s.key===k).name+' +'+n).join('、')+'。';
+    }
+  }
+  state.socialUsed=true;state.socialReply=text;record('交遊紀錄\n'+text);render();
+}
+$('target').replaceChildren(...D.PRINCE_ORDER.map(id => {const o = document.createElement('option');o.value = id;o.textContent = D.PRINCES[id].title + ' · ' + D.PRINCES[id].name;return o;}));
+D.CHANNELS.forEach((c,i) => {
+  const label = document.createElement('label');
+  const cost = Object.entries(c.cost).map(([key,n]) => D.STATS.find(s=>s.key === key).name + ' −' + n).join(' / ');
+  label.innerHTML = `<input type="radio" name="channel" value="${c.id}" ${i === 0 ? 'checked' : ''}> ${c.name}<small>${cost} · 風險${c.riskLabel}<br>${c.desc}</small>`;
+  $('channels').append(label);
+});
+$('probe').onclick = () => {$('reply').textContent = `本案尚可呈遞 ${2-state.probes} 次。`;updateSend();$('modal').showModal();};
+function updateSend(){const c = D.CHANNELS.find(c=>c.id === document.querySelector('[name=channel]:checked').value);$('send').disabled = state.probes >= 2 || state.ended || !!pending || state.current.chapter > D.CONFIG.MEMORIAL_LAST_CHAPTER || Object.entries(c.cost).some(([key,n])=>state.stats[key] < n);}
+$('channels').onchange = updateSend;
+$('send').onclick = () => {
+  updateSend();if($('send').disabled) return;
+  const c = D.CHANNELS.find(c=>c.id === document.querySelector('[name=channel]:checked').value);
+  change(Object.fromEntries(Object.entries(c.cost).map(([k,n])=>[k,-n])));state.probes++;
+  const target = $('target').value;
+  let text;
+  if(Math.random() < c.clarity) {
+    const truthful = Math.random() < c.accuracy;
+    const positive = (target === state.trueSuccessor) === truthful;
+    text = pick(D.CLUES[target][positive ? 'pos' : 'neg'][c.mode]);
+  } else text = pick(D.CLUES.ambiguous[c.mode]);
+  if(Math.random() < c.risk) {change(c.penalty);text += '\n\n' + c.exposeText;}
+  $('reply').textContent = `${c.head}\n「${text}」\n\n情報或真或假，請自行斟酌。`;
+  record(`密摺 · ${D.PRINCES[target].title}\n${text}`);
+  render();updateSend();
+};
+$('restart').onclick = reset;
+document.querySelectorAll('[data-scenario]').forEach(button => button.onclick = () => {
+  reset();state.turn = D.TIMELINE.findIndex(e=>e.id === 'fin_choice');state.flags.acceded = true;
+  state.stats = {...D.CONFIG.START, shengJuan: button.dataset.scenario === 'trap' ? 85 : 50, jiaCai: button.dataset.scenario === 'poor' ? 15 : 45};
+  loadTurn();record('測試情境 · ' + button.textContent + '\n新君：' + D.PRINCES[state.trueSuccessor].name);render();
+});
+reset();
+
+</script>
 </body></html>
